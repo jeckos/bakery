@@ -21,7 +21,7 @@
     <!-- Custom Browsers Color Start -->
     <meta name="theme-color" content="#000">
     <!-- Custom Browsers Color End -->
-
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -112,11 +112,11 @@
             </div>
             <div class="col col-xl-6 col-md-12 col-sm-12 col-12">
                 <div class="images_wrapper">
-                    <div class="print_img_block">
+                    <div class="print_img_block wow fadeIn flip" data-wow-delay="1s">
                         TASTES SO
                         GOOD!
                     </div>
-                    <div class="images_block">
+                    <div class="images_block wow zoomIn">
                         <div class="image_wrapper">
                             <img src="./img/img1.jpg" alt="">
                         </div>
@@ -198,21 +198,21 @@
                         <span>7am Breakfast? we’re open!</span>
                     </h2>
                     <div class="menu-items">
-                        <div class="menu-items_item">
+                        <div class="menu-items_item wow slideInLeft">
                             <h3 class="menu-items_title">
                                 Full breakfast
                                 <span>Duis ut tortor, et risus, vulputate pretium</span>
                             </h3>
                             <p class="price">$12.49</p>
                         </div>
-                        <div class="menu-items_item">
+                        <div class="menu-items_item wow slideInLeft" data-wow-delay=".2s">
                             <h3 class="menu-items_title">
                                 Toast & Jam
                                 <span>Suspendisse, tempus, nterdum</span>
                             </h3>
                             <p class="price">$4.90</p>
                         </div>
-                        <div class="menu-items_item">
+                        <div class="menu-items_item wow slideInLeft" data-wow-delay=".4s">
                             <h3 class="menu-items_title">
                                 Muffins
                                 <span>Fusce eget dui sodales est</span>
@@ -260,7 +260,7 @@
             <div class="col col-xl-3 col-md-12 col-sm-12 col-12">
                 <div class="ingredients">
                     <div class="menu-items">
-                        <div class="menu-items_item">
+                        <div class="menu-items_item wow slideInLeft">
                             <div class="thumb">
                                 <img src="./img/img_thumb1.png" alt="">
                             </div>
@@ -269,7 +269,7 @@
                                 <span>Duis ut tortor, et risus, vulputate pretium</span>
                             </h3>
                         </div>
-                        <div class="menu-items_item">
+                        <div class="menu-items_item wow slideInLeft">
                             <div class="thumb">
                                 <img src="./img/img_thumb2.png" alt="">
                             </div>
@@ -279,7 +279,7 @@
 pretium Integer tincidunt.</span>
                             </h3>
                         </div>
-                        <div class="menu-items_item">
+                        <div class="menu-items_item wow slideInLeft">
                             <div class="thumb">
                                 <img src="./img/img_thumb3.png" alt="">
                             </div>
@@ -299,7 +299,7 @@ porttitor eu, consequat vitae.</span>
                         <div class="label">
                             FULL RECIPE
                         </div>
-                        <div class="time_lines">
+                        <div class="time_lines wow bounceInUp">
                             <div class="time_lines_line transparent">
                                 <p>
                                     PREP
@@ -357,6 +357,11 @@ porttitor eu, consequat vitae.</span>
 
 
 <script src="js/scripts.min.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 
 </body>
 </html>
