@@ -1,0 +1,198 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+  .header_nav{
+    display: none;
+  }
+  .header_social-links{
+    margin-right: 10px;
+    margin-left: auto;
+  }
+  .logo{
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .footer_nav{
+      margin-top: 30px;
+  }
+  .btn-menu{
+    display: block;
+  }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .header{
+    padding-bottom: 80px;
+    &_center{
+      margin-top: 70px;
+      &_title{
+        line-height: 70px;
+        font-size: 70px;
+      }
+      &_text{
+        font-size: 18px;
+        margin: 45px auto;
+        padding: 0 10px;
+      }
+    }
+  }
+  .section_gallery .gallery_wrapper .gallery{
+    flex-direction: column;
+    clip-path: none;
+    height: auto;
+  }
+  .section_gallery .gallery_wrapper .gallery .photo_wrapper{
+    width: 100%;
+    img{
+      position: relative;
+      height: 300px;
+    }
+  }
+  .section_gallery .gallery_wrapper .gallery_content{
+    width: 100%;
+    padding: 40px;
+    box-shadow:none;
+    &:before{
+      display: none;
+    }
+  }
+  .section_gallery .gallery_wrapper .gallery_content_text{
+    margin-top: 30px;
+  }
+  .section_gallery .gallery_wrapper .gallery_content_slider_wrapper{
+    width: 60%;
+  }
+  .section_gallery .gallery_wrapper .ready{
+    width: 150px;
+    height: 150px;
+    right: 20px;
+    padding: 20px 20px;
+    p{
+      font-size: 15px;
+      strong{
+        font-size: 50px;
+        line-height: 45px;
+      }
+    }
+  }
+  .section_breakfast .wallpaper_wrapper_first{
+    width: 100%;
+    height: auto;
+  }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+  .section_breakfast .wallpaper_wrapper_second, .section_breakfast .wallpaper_wrapper_third{
+    display: none;
+  }
+  .section_breakfast .wallpaper_wrapper_first_header{
+    background-size: 100%;
+  }
+  .section_gallery .gallery_wrapper .gallery_content_slider_wrapper{
+    justify-content: center;
+  }
+  .gallery_content_slider_slide{
+    display: none;
+    &:first-child{
+      display: block;
+    }
+  }
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+  .section_art .art-of-cakes .chef-cook_block img {
+    width: 70px;
+    margin: 0 5px;
+  }
+  .section_art .art-of-cakes .chef-cook_block span{
+    font-size: 18px;
+  }
+  .section_art .art-of-cakes .chef-cook_block blockquote{
+    margin: 45px 0;
+    padding: 0 50px;
+  }
+  .section_art .images_wrapper .print_img_block{
+    width: 150px;
+    height: 150px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .section_gallery .gallery_wrapper .gallery{
+    margin: 0;
+  }
+  .section_sendwich .wallpaper_wrapper_block{
+    height: 400px;
+  }
+  .section_breakfast .wallpaper_wrapper_first_header{
+    width: calc(100% - 50px);
+  }
+  .header_social-links{
+    display: none;
+  }
+  .section_sendwich .wallpaper_wrapper_block .time_lines_line{
+    width: 150px;
+    height: 150px;
+    padding: 20px 30px;
+    p{
+      font-size: 15px !important;
+      strong{
+        font-size: 46px !important;
+        line-height: 50px !important;
+      }
+    }
+  }
+  .section_sendwich .wallpaper_wrapper_block .label{
+    width: 130px;
+    height: 50px;
+    font-size: 15px;
+    left: -7px;
+    bottom: -10px;
+  }
+  .footer_nav_items{
+    flex-direction: column;
+  }
+  .footer{
+    padding-bottom: 40px;
+  }
+  .footer_nav{
+    margin: 0;
+    border: none;
+  }
+  .footer_nav_items_item:after{
+    display: none;
+  }
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
+

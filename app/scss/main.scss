@@ -1,0 +1,109 @@
+@import "vars";
+@import "fonts";
+@import "icons";
+@import "libs";
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.5;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $text;
+  input, textarea {
+    border: #666 1px solid;
+    outline: none;
+    &:focus:required:invalid {
+      border-color: red;
+    }
+    &:required:valid {
+      border-color: green;
+    }
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  &.img-width {
+    width: 100%;
+  }
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  cursor: pointer;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  &_dashed-bd {
+    border: 1px dashed #9e9c93;
+    background-color: rgba(#56534c, .53);
+    color: #ffffff;
+    font-family: Alegreya, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 12px 48px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    &:hover{
+      background-color: rgba(#56534c, 1);
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}
+.open{
+  background-color: rgba(86,83,76,1) !important;
+}
+.btn-menu{
+  background: none;
+  font-size: 30px;
+  margin-left: 15px;
+  color: #fff;
+  display: none;
+}
+.logo {
+  font-family: Scriptina, sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 9px;
+  margin-bottom: 16px;
+  text-decoration: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+@import "header";
+@import "section_art";
+@import "section_gallery";
+@import "section_breakfast";
+@import "section_sendwich";
+@import "footer";
+
+@import "media"; // Always at the end

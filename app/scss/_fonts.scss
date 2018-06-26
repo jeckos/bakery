@@ -1,0 +1,21 @@
+@import "_mixins/font-face";
+
+@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+
+@include font-face("Scriptina", "../fonts/Scriptina/Scriptina");
+
+@include font-face("Alegreya", "../fonts/AlegreyaRegular/Alegreya-Regular");
+@include font-face("Alegreya", "../fonts/AlegreyaMedium/Alegreya-Medium", 500);
+@include font-face("Alegreya", "../fonts/AlegreyaBold/Alegreya-Bold", 700);
+@include font-face("Alegreya", "../fonts/AlegreyaExtraBold/Alegreya-ExtraBold", 800);
+@include font-face("Alegreya", "../fonts/AlegreyaBlack/Alegreya-Black", 900);
+
+@include font-face("icons", "../fonts/icons/icons");
+
+@include font-face("Proxima Nova", "../fonts/ProximaNovaRegular/ProximaNova-Regular");
+
+@include font-face("Playfair Display", "../fonts/PlayfairDisplayBold/PlayfairDisplay-Bold");
+
+@include font-face("Times New Roman PSMT", "../fonts/TimesNewRomanPSMT/TimesNewRomanPSMT");
+

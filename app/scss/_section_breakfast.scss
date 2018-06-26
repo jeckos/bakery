@@ -1,0 +1,189 @@
+.section_breakfast {
+  width: 100%;
+  background: url("../img/bg_section_breakfast.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 105px 0;
+
+  .breakfast {
+    text-align: center;
+    &_title {
+      font-family: Alegreya, sans-serif;
+      color: #ffffff;
+      font-size: 60px;
+      letter-spacing: 3px;
+      text-align: center;
+      span {
+        color: #c8a593;
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+      }
+    }
+    .menu-items {
+      &_item {
+        margin-top: 50px;
+      }
+      &_title {
+        color: #ffffff;
+        font-family: Alegreya, sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        span {
+          display: block;
+          color: #c2beba;
+          font-family: "Proxima Nova", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: 0.8px;
+        }
+
+      }
+      .price {
+        color: #dfc691;
+        font-family: Alegreya, sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 1.8px;
+      }
+    }
+  }
+  .wallpaper_wrapper {
+    position: relative;
+    margin-right: 0;
+    margin-left: auto;
+    &_first{
+      text-align: center;
+      width: 440px;
+      height: 600px;
+      position: relative;
+      background: #f3f1e9 url("../img/phenica.png") no-repeat 266px calc(100% - -71px);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 40px 100%, 0 calc(100% - 40px));
+      outline: 1px dashed #9e9c93;
+      outline-offset: -11px;
+      z-index: 5;
+      margin-right: 0;
+      margin-left: auto;
+      padding: 1px 0 66px 0;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        box-shadow: 3px 0 6px rgba(0, 0, 0, 0.2);
+        background: #ffffff linear-gradient(45deg, rgba(86, 83, 76, 0.34) 0%, rgba(255, 255, 255, 0.34) 100%);
+        z-index: 3;
+      }
+      &_header{
+        background: url("../img/2-layers.png") no-repeat center;
+        width: 367px;
+        height: 60px;
+        margin: 78px auto;
+        position: relative;
+        &:before, &:after{
+          position: absolute;
+          color: #56534c;
+          font-family: Alegreya, sans-serif;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 30px;
+          text-transform: uppercase;
+          letter-spacing: 0.7px;
+          top: -40px;
+        }
+        &:before{
+          content: 'EST.';
+          left: 68px;
+        }
+        &:after{
+          content: '1893';
+          right: 68px;
+        }
+      }
+      &_content{
+        padding: 0  50px;
+      }
+      &_title{
+        color: #56534c;
+        font-family: Alegreya, sans-serif;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 1.1px;
+      }
+      &_text{
+        color: #56534c;
+        font-family: "Proxima Nova", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.7px;
+        margin-bottom: 55px;
+      }
+      .btn-transparent{
+        border: 1px solid #9e9c93;
+        color: #a47d5e;
+        font-family: Alegreya, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        padding: 10px 70px;
+      }
+    }
+    &_second{
+      width: 402px;
+      height: 548px;
+      background-color: #e5e3d9;
+      position: absolute;
+      top: 26px;
+      right: -13px;
+      z-index: 4;
+      outline: 1px dashed #9e9c93;
+      outline-offset: -11px;
+    }
+    &_third{
+        content: '';
+        display: block;
+        width: 367px;
+        height: 501px;
+        background-color: #d5d3cb;
+        position: absolute;
+        top: 52px;
+        right: -26px;
+        z-index: 1;
+        outline: 1px dashed #9e9c93;
+        outline-offset: -11px;
+    }
+  }
+  .wallpaper_wrapper_bg {
+
+
+  }
+  .images_block {
+    display: flex;
+    flex-wrap: wrap;
+    .image_wrapper {
+      margin: 10px;
+      width: calc(50% - 20px);
+    }
+    img {
+      outline: 5px solid #fff;
+      outline-offset: -12px;
+      width: 100%;
+    }
+  }
+}
+
